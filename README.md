@@ -1,1 +1,1 @@
-# telegram_bots
+# telegram-bots
