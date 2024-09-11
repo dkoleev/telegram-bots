@@ -1,6 +1,4 @@
 import requests
-from telegram import Update
-from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 # Function to fetch server details from an external API
 def get_rust_servers(search_term):
