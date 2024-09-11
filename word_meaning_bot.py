@@ -21,8 +21,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Send a message when the command /start is issued."""
     user = update.effective_user
     await update.message.reply_html(
-        rf"Hi {user.mention_html()}!",
-        reply_markup=ForceReply(selective=False),
+        rf"Hi {user.mention_html()}! Enter the word you need the explanation for."
     )
 
 
