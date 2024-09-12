@@ -3,6 +3,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 import rust_servers
 import rust_remote_commands
 import time
+import bot_tokens
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text("Hello! I am your Rust bot. What do you want to do?")
@@ -51,7 +52,7 @@ def notify_user(user_id, raid_log):
     application.bot.send_message(chat_id=user_id, text=message)
 
 if __name__ == '__main__':
-    application = ApplicationBuilder().token("7427697633:AAFa1Zlp87rRGvuYTJ8y8heTxQ4SdNkWhkM").build()
+    application = ApplicationBuilder().token(bot_tokens.rust_game_bot_token).build()
 
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("status", player_status))

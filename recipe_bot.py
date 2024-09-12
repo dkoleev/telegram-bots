@@ -2,6 +2,7 @@ import logging
 import requests
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters
+import bot_tokens
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -38,7 +39,7 @@ async def get_recipes(update: Update, context):
         await update.message.reply_text("Sorry, I couldn't find any recipes. Please try again.")
 
 def main():
-    application = ApplicationBuilder().token('7537918689:AAHZhW0YP1U_B3ft5lKavYro29G6WOxpDO8').build()
+    application = ApplicationBuilder().token(bot_tokens.recipe_top_bot_token).build()
 
     application.add_handler(CommandHandler('start', start))
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, get_recipes))
