@@ -25,6 +25,7 @@ from telegram.ext import (
     MessageHandler,
     filters,
 )
+import bot_tokens
 
 # Enable logging
 logging.basicConfig(
@@ -139,7 +140,7 @@ async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
 def main() -> None:
     """Run the bot."""
     # Create the Application and pass it your bot's token.
-    application = Application.builder().token("7416123211:AAHHxBFk1khC2Tpazekmvyi-DJ8AyV7DGUs").build()
+    application = Application.builder().token(bot_tokens.universal_python_test_bot_token).build()
 
     # Add conversation handler with the states GENDER, PHOTO, LOCATION and BIO
     conv_handler = ConversationHandler(
