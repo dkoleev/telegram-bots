@@ -13,7 +13,7 @@ Here’s a simple step-by-step guide to help you create a basic bot:
 
 ### 2. Set up your Python environment
 
-If you don’t have Python installed, download and install it from [python.org](https://www.python.org/). You’ll also need the [`python-telegram-bot`](https://github.com/python-telegram-bot) library:
+If you don’t have Python installed, download and install it from [python.org](https://www.python.org/). You’ll also need the [`python-telegram-bot`](https://github.com/python-telegram-bot/python-telegram-bot) library:
 
 ```bash
 pip install python-telegram-bot
