@@ -3,7 +3,8 @@
 ## Table of Contents
 - [What is a Telegram Bot](#what-is-telegram-bot)
 - [Demo bots](#demo-bots)
-- [Word Meaning Bot](#word-meaning-bot)
+- [My Bots](#my-bots)
+    - [Word Meaning Bot](#word-meaning-bot)
 - [Host bots](#host-bots)
 
 ## What is a Telegram Bot
@@ -16,6 +17,7 @@ _You can read more about bots in the official documentation:_
 ## [Demo Bots](https://github.com/dkoleev/telegram-bots/tree/main/demo)
 Demo bots from python-telegram-bot [Examples](https://docs.python-telegram-bot.org/en/stable/examples.html)
 
+## My Bots
 ## [Word Meaning Bot](https://github.com/dkoleev/telegram-bots/blob/main/word_meaning_bot.py)
 This bot shows phonetic, meaning, and pronunciations for entered words.
 
